@@ -1,0 +1,53 @@
+{
+	"providers": {
+		"awscloudformation": {
+			"AuthRoleName": "todoerdemo-20190106135307-authRole",
+			"UnauthRoleArn": "arn:aws:iam::221146165642:role/todoerdemo-20190106135307-unauthRole",
+			"AuthRoleArn": "arn:aws:iam::221146165642:role/todoerdemo-20190106135307-authRole",
+			"Region": "us-east-1",
+			"DeploymentBucketName": "todoerdemo-20190106135307-deployment",
+			"UnauthRoleName": "todoerdemo-20190106135307-unauthRole",
+			"StackName": "todoerdemo-20190106135307",
+			"StackId": "arn:aws:cloudformation:us-east-1:221146165642:stack/todoerdemo-20190106135307/050538f0-11b2-11e9-89e0-0e92b042adf6"
+		}
+	},
+	"hosting": {
+		"S3AndCloudFront": {
+			"service": "S3AndCloudFront",
+			"providerPlugin": "awscloudformation",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/todoerdemo-20190106135307-deployment/amplify-cfn-templates/hosting/template.json",
+				"logicalId": "hostingS3AndCloudFront"
+			},
+			"lastPushTimeStamp": "2019-01-06T13:24:49.967Z",
+			"output": {
+				"S3BucketSecureURL": "https://todoerdemo-20190106135506-hostingbucket.s3.amazonaws.com",
+				"WebsiteURL": "http://todoerdemo-20190106135506-hostingbucket.s3-website-us-east-1.amazonaws.com",
+				"Region": "us-east-1",
+				"HostingBucketName": "todoerdemo-20190106135506-hostingbucket"
+			},
+			"lastPushDirHash": "qrH7jCIKj0fk2WNJ8u9XQpI9c7U="
+		}
+	},
+	"auth": {
+		"cognito8a784bd4": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/todoerdemo-20190106135307-deployment/amplify-cfn-templates/auth/cognito8a784bd4-cloudformation-template.yml",
+				"logicalId": "authcognito8a784bd4"
+			},
+			"lastPushTimeStamp": "2019-01-06T13:24:49.971Z",
+			"output": {
+				"AppClientSecret": "uap89eeduv4vukvbrsqbrcqlj208up8ktknkciqdm30c2fiabuk",
+				"UserPoolId": "us-east-1_aaS1u5LN6",
+				"AppClientIDWeb": "7e8ip5jv90lv3gsbhlmc1lkuqd",
+				"AppClientID": "5lq4po9q4r6mrpptjb4s8nu51s",
+				"IdentityPoolId": "us-east-1:63870266-bd94-4e50-b48e-4281ab5a3615",
+				"IdentityPoolName": "cognito8a784bd4_identitypool_8a784bd4",
+				"UserPoolName": "cognito8a784bd4_userpool_8a784bd4"
+			},
+			"lastPushDirHash": "FEIeEvy8NhzqdbdJXjpOZ+dMuR4="
+		}
+	}
+}

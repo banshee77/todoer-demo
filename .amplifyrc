@@ -1,0 +1,14 @@
+{
+    "providers": {
+        "awscloudformation": {
+            "AuthRoleName": "todoerdemo-20190106135307-authRole",
+            "UnauthRoleArn": "arn:aws:iam::221146165642:role/todoerdemo-20190106135307-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::221146165642:role/todoerdemo-20190106135307-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "todoerdemo-20190106135307-deployment",
+            "UnauthRoleName": "todoerdemo-20190106135307-unauthRole",
+            "StackName": "todoerdemo-20190106135307",
+            "StackId": "arn:aws:cloudformation:us-east-1:221146165642:stack/todoerdemo-20190106135307/050538f0-11b2-11e9-89e0-0e92b042adf6"
+        }
+    }
+}
